@@ -1,447 +1,460 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-  list-style: none;
-  scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
 }
 :root {
-  --bg-color: #2a2a2a;
-  --sc-bg-color: #202020;
-  --text-color: #fff;
-  --second-color: #ccc;
-  --main-color: #2b15f0;
-  --big-font: 3rem;
-  --h2-font: 2rem;
-  --p-font: 0.9rem;
+    --bg-color: #2a2a2a;
+    --sc-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #2b15f0;
+    --big-font: 3rem;
+    --h2-font: 2rem;
+    --p-font: 0.9rem;
 }
 body {
-  background: var(--bg-color);
-  color: var(--text-color);
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: transparent;
-  padding: 5px 7%;
-  border-bottom: 1px solid transparent;
-  transition: all 0.45s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 5px 7%;
+    border-bottom: 1px solid transparent;
+    transition: all 0.45s ease;
 }
 .logo {
-  color: var(--text-color);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  /* text-shadow: 1px 2px black; */
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    /* text-shadow: 1px 2px black; */
 }
 span {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 .navlist {
-  display: flex;
+    display: flex;
 }
 .navlist a {
-  color: var(--second-color);
-  font-size: 17px;
-  font-weight: 500;
-  margin: 0 25px;
-  transition: all 0.45s ease;
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all 0.45s ease;
 }
 .navlist a:hover {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 .navlist a.active {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 #menu-icon {
-  font-size: 35px;
-  color: var(--text-color);
-  z-index: 10001;
-  cursor: pointer;
-  margin-left: 25px;
-  display: none;
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
 }
 section {
-  padding: 100px 7%;
+    padding: 100px 7%;
 }
 .home {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image: url("/img/cover-portofolio.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("/img/cover-portofolio.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
+
+.home::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgb(42, 42, 42, 1) 10%, rgba(255, 255, 255, 0) 75%);
+}
+
 .slide {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .one {
-  display: inline-block;
-  margin-right: 15px;
-  height: 32px;
-  padding: 0 15px;
-  line-height: 30px;
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 5px;
-  background: var(--main-color);
-  color: var(--text-color);
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
 }
 .two {
-  display: inline-block;
-  color: var(--text-color);
-  font-size: 20px;
-  font-weight: 500;
+    display: inline-block;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
 }
 .home-text h1 {
-  font-size: var(--big-font);
-  font-weight: 700;
-  color: var(--text-color);
-  line-height: 1.1;
-  margin: 0 0 8px;
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
 }
 .home-text h3 {
-  color: var(--text-color);
-  margin: 0 0 10px;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 30px;
+    color: var(--text-color);
+    margin: 0 0 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
 }
 .home-text p {
-  color: var(--second-color);
-  font-size: var(--p-font);
-  line-height: 1.8;
-  margin-bottom: 20px;
-  text-shadow: 1px 2px #202020;
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px #202020;
+    mix-blend-mode: difference;
 }
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn {
-  display: inline-block;
-  padding: 6px 14px;
-  background-color: var(--main-color);
-  border-radius: 5px;
-  color: var(--text-color);
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  transition: all 0.45s ease;
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all 0.45s ease;
 }
 .btn:hover {
-  transform: scale(0.9);
+    transform: scale(0.9);
 }
 .btn2 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-color);
-  margin-left: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 25px;
 }
 .btn2 span i {
-  height: 35px;
-  width: 35px;
-  background: var(--main-color);
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  border-radius: 50%;
-  margin-right: 15px;
-  transition: all 0.45s ease;
+    height: 35px;
+    width: 35px;
+    background: var(--main-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 0.45s ease;
 }
 .btn2 span i:hover {
-  transform: scale(1.1) translateY(5px);
+    transform: scale(1.1) translateY(5px);
 }
 header.sticky {
-  background: var(--bg-color);
-  border-bottom: 1px solid rgb(80, 80, 80);
+    background: var(--bg-color);
+    border-bottom: 1px solid rgb(80, 80, 80);
 }
 .about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: flex-start;
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 1.5rem;
 }
 .about-img img {
-  max-width: 300px;
-  height: auto;
-  width: 100%;
-  border-radius: 20px;
-  margin-left: 200px;
+    max-width: 300px;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    margin-left: 200px;
 }
 .about-text h2 {
-  font-size: var(--h2-font);
-  line-height: 1;
+    font-size: var(--h2-font);
+    line-height: 1;
 }
 .about-text h4 {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-color);
-  line-height: 1.3;
-  margin: 15px 0 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.3;
+    margin: 15px 0 30px;
 }
 .about-text p {
-  color: var(--second-color);
-  font-size: var(--p-font);
-  line-height: 1.3;
-  margin-bottom: 2rem;
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.3;
+    margin-bottom: 2rem;
 }
 .services {
-  background: var(--sc-bg-color);
+    background: var(--sc-bg-color);
 }
 .main-text {
-  text-align: center;
+    text-align: center;
 }
 .main-text p {
-  color: var(--second-color);
-  font-size: 15px;
-  margin-bottom: 15px;
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 .main-text h2 {
-  font-size: var(--h2-font);
-  line-height: 1;
+    font-size: var(--h2-font);
+    line-height: 1;
 }
 .services-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
 }
 .box {
-  background: var(--bg-color);
-  padding: 35px 45px;
-  border-radius: 10px;
-  transition: all 0.45s ease;
-  text-align: center;
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 10px;
+    transition: all 0.45s ease;
+    text-align: center;
 }
 .box:hover {
-  transform: translateY(-10px);
-  cursor: pointer;
+    transform: translateY(-10px);
+    cursor: pointer;
 }
 .s-icons i {
-  font-size: 35px;
-  margin-bottom: 20px;
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 .box h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--text-color);
-  margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
 }
 .box p {
-  color: var(--second-color);
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 25px;
+    color: var(--second-color);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
 }
 .read {
-  display: inline-block;
-  padding: 8px 18px;
-  background: #333333;
-  color: var(--second-color);
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 10px;
-  transition: all 0.45s ease;
+    display: inline-block;
+    padding: 8px 18px;
+    background: #333333;
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.45s ease;
 }
 .read:hover {
-  letter-spacing: 1px;
-  background: #ffffff99;
-  color: var(--text-color);
+    letter-spacing: 1px;
+    background: #ffffff99;
+    color: var(--text-color);
 }
 .portofolio-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
 }
 .row {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .row img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  transition: transform 0.5s;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
 }
 .row:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 .layer {
-  width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), #06b47a);
-  position: absolute;
-  border-radius: 10px;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 40px;
-  transition: height 0.5s;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #06b47a);
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
 }
 .row:hover .layer {
-  height: 100%;
+    height: 100%;
 }
 .layer h5 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 .layer p {
-  color: var(--second-color);
-  font-size: 14px;
-  line-height: 1.8;
+    color: var(--second-color);
+    font-size: 14px;
+    line-height: 1.8;
 }
 .layer i {
-  color: var(--main-color);
-  margin-top: 20px;
-  font-size: 20px;
-  background: var(--text-color);
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 30%;
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30%;
 }
 .contact {
-  background: var(--sc-bg-color);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: flex-start;
-  gap: 2.5rem;
+    background: var(--sc-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 2.5rem;
 }
 .contact-text h4 {
-  color: var(--text-color);
-  margin: 18px 0;
-  font-size: 20px;
-  font-weight: 600;
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
 }
 .contact-text h2 {
-  font-size: var(--h2-font);
-  line-height: 1;
+    font-size: var(--h2-font);
+    line-height: 1;
 }
 .contact-text p {
-  color: var(--second-color);
-  font-size: var(--p-font);
-  line-height: 1.8;
-  margin-bottom: 30px;
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
 }
 .list {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 .list li {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 .list li a {
-  display: block;
-  color: var(--second-color);
-  font-size: 17px;
-  transition: all 0.45s ease;
+    display: block;
+    color: var(--second-color);
+    font-size: 17px;
+    transition: all 0.45s ease;
 }
 .list li a:hover {
-  color: var(--text-color);
-  transform: translateX(5px);
+    color: var(--text-color);
+    transform: translateX(5px);
 }
 .contact-icons i {
-  height: 45px;
-  width: 45px;
-  background: var(--main-color);
-  color: var(--text-color);
-  font-size: 22px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  margin-right: 5px;
-  transition: all 0.45s ease;
+    height: 45px;
+    width: 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: all 0.45s ease;
 }
 .contact-icons i:hover {
-  background: var(--text-color);
-  color: var(--main-color);
+    background: var(--text-color);
+    color: var(--main-color);
 }
 .contact-form form {
-  position: relative;
+    position: relative;
 }
 .contact-form form input,
 form textarea {
-  width: 100%;
-  padding: 14px;
-  background: var(--bg-color);
-  color: var(--text-color);
-  border: none;
-  outline: none;
-  font-size: 14px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+    width: 100%;
+    padding: 14px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 .contact-form form input:focus,
 form textarea:focus {
-  border: #06b47a 1px solid;
+    border: #06b47a 1px solid;
 }
 .contact form textarea {
-  resize: none;
-  height: 150px;
+    resize: none;
+    height: 150px;
 }
 .contact-form .submit {
-  display: inline-block;
-  font-size: 14px;
-  background: var(--main-color);
-  color: var(--text-color);
-  width: 150px;
-  transition: all 0.45s ease-in;
+    display: inline-block;
+    font-size: 14px;
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 150px;
+    transition: all 0.45s ease-in;
 }
 .contact-form .submit:hover {
-  transform: scale(1.1) translateX(5px);
-  cursor: pointer;
-  background: var(--text-color);
-  color: var(--main-color);
+    transform: scale(1.1) translateX(5px);
+    cursor: pointer;
+    background: var(--text-color);
+    color: var(--main-color);
 }
 .end {
-  padding: 20px 7%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  background: var(--bg-color);
+    padding: 20px 7%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: var(--bg-color);
 }
 .last-text p {
-  color: var(--second-color);
-  font-size: 14px;
+    color: var(--second-color);
+    font-size: 14px;
 }
 .top i {
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 15px;
-  color: var(--text-color);
-  background: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: var(--text-color);
+    background: var(--main-color);
 }
